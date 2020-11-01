@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_below"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.pumkit.chin.chinchinso.ProfileActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/profile_pager"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/profile_pager"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/profile_pager"
+        android:alpha="1"
+        android:background="@color/mainColor" />
+
+    <Button
+        android:id="@+id/btn_pic_management"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/line1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/icon_camera"
+        android:text="사진관리" />
+
+    <ImageView
+        android:id="@+id/img_close_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/icon_x_40"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/profile_pager"
+        android:paddingBottom="30dp"
+        android:paddingLeft="22dp"
+        android:paddingTop="30dp">
+
+        <TextView
+            android:id="@+id/txt_match_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 프로필" />
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/match_name"
+            android:layout_marginTop="24dp"
+            android:text="김민교님의 프로필"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_hash1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#해쉬1" />
+
+            <TextView
+                android:id="@+id/txt_hash2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="#해쉬2" />
+
+            <TextView
+                android:id="@+id/txt_hash3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="#해쉬3" />
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_go_chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="20dp"
+            android:layout_marginRight="11dp"
+            android:background="@drawable/border_circle_bk1"
+            android:text="대화시작" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pumkit.chin.chinchinso.StartDate">
+
+    <include
+        layout="@layout/activity_profile_f"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/layout_above"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_scratch"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layout_scratch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/circle_alpha"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="78dp"
+                    android:layout_height="330dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/rectangle_alpha"/>
+
+                <ImageView
+                    android:id="@+id/btn_start"
+                    android:layout_width="78dp"
+                    android:layout_height="78dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_noprofile_m" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="105dp"
+            android:text="오늘의 주선자"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/title_match"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="아래로 스크롤하세요."
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/txt_match"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_match"
+            android:layout_centerHorizontal="true"
+            android:text="ooo"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

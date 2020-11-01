@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.pumkit.chin.chinchinso.MyImageList">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top_bar_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/btn_add_article"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="3dp"
+        android:padding="10dp"
+        android:background="@drawable/border_circle_bk1"
+        android:text="사진추가"/>
+
+    <ListView
+        android:id="@+id/listView_my_pic"
+        android:layout_width="match_parent"
+        android:layout_below="@id/topbar"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/nav_date"
+        android:title="소개하기" />
+
+    <item
+        android:id="@+id/nav_opendate"
+        android:title="모두의소개팅" />
+
+    <item
+        android:id="@+id/nav_match"
+        android:title="주선하기"/>
+
+    <item
+        android:id="@+id/nav_mypage"
+        android:title="내 프로필"/>
+
+    <item
+        android:id="@+id/nav_announcement"
+        android:title="공지사항"/>
+
+    <item
+        android:id="@+id/nav_setting"
+        android:title="설정"/>
+
+</menu>

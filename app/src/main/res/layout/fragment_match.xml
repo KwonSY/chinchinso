@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        tools:context="com.pumkit.chin.fragment.MatchFragment">
+
+        <include
+            android:id="@+id/topbar"
+            layout="@layout/top_logo_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topbar"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/title_my_fr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="11dp"
+                    android:text="이 친구를 추천합니다"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title_my_fr"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/img_fr"
+                        android:layout_width="@dimen/profile_l"
+                        android:layout_height="@dimen/profile_l"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/icon_noprofile_circle_m" />
+
+                    <ImageView
+                        android:id="@+id/img_my"
+                        android:layout_width="@dimen/profile_s"
+                        android:layout_height="@dimen/profile_s"
+                        android:layout_alignBottom="@id/img_fr"
+                        android:layout_alignRight="@id/img_fr"
+                        android:src="@drawable/icon_profile_female_pink" />
+
+                    <TextView
+                        android:id="@+id/txt_fr_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/img_fr"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="친구이름 로딩중..."
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/btn_change_fr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/layout_map"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/border_circle_bk1"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="7dp"
+                    android:text="다른친구&#10;선택하기"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_below="@id/layout_map">
+
+                    <TextView
+                        android:id="@+id/title_recomm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:textStyle="bold"
+                        android:text="소개의 글" />
+
+                    <TextView
+                        android:id="@+id/txt_my_recomm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/title_recomm"
+                        android:padding="10dp"
+                        android:text="친구평 : 저는 제 친구를 이런 점을 추천합니다." />
+
+                    <TextView
+                        android:id="@+id/btn_edit_recomm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/txt_my_recomm"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="8dp"
+                        android:background="@drawable/border_circle_bk1"
+                        android:paddingBottom="7dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="7dp"
+                        android:text="편집"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/title_fr_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="11dp"
+                android:text="친구들 소개팅 상태"
+                android:textStyle="bold" />
+
+            <ListView
+                android:id="@+id/list_fr_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

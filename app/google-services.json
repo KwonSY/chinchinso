@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "951491062425",
+    "firebase_url": "https://chinchinso-e0a06.firebaseio.com",
+    "project_id": "chinchinso-e0a06",
+    "storage_bucket": "chinchinso-e0a06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951491062425:android:6b6747e37e32fc6a",
+        "android_client_info": {
+          "package_name": "com.pumkit.chin.chinchinso"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951491062425-oc3633tccfmef0l08b2qd9hvu576nfdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDvgl6xbOtBE_HYcx-NUpAFr9ihRT-MSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:951491062425:android:23f2835847790a5b",
+        "android_client_info": {
+          "package_name": "com.pumkit.chin.chinchin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "951491062425-oc3633tccfmef0l08b2qd9hvu576nfdp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDvgl6xbOtBE_HYcx-NUpAFr9ihRT-MSw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

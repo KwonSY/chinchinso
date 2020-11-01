@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="com.pumkit.chin.fragments.OpenDateFragment">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top_logo_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:layout_below="@id/topbar"
+        android:id="@+id/public_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"
+        android:divider="#dfdfdf"
+        android:dividerHeight="8dp" />
+
+    <RelativeLayout
+        android:id="@+id/layout_public_n"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_public_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="소개팅을 진행하시겠습니까?" />
+
+        <Button
+            android:id="@+id/btn_go_public"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_public_explain"
+            android:layout_centerHorizontal="true"
+            android:text="공개팅 시작하기" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_chatBox"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/img_user"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_noprofile_s" />
+
+    <TextView
+        android:id="@+id/txt_chatUserName_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/img_user"
+        android:text="User_Name" />
+
+    <TextView
+        android:id="@+id/txt_chatMessage_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_chatUserName_item"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/img_user"
+        android:background="#ffffff"
+        android:maxWidth="200dp"
+        android:padding="10dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/chatTime_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txt_chatMessage_item"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txt_chatMessage_item"
+        android:text="12:00" />
+
+    <TextView
+        android:id="@+id/chatTime_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/txt_chatMessage_item"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@id/txt_chatMessage_item"
+        android:text="01:00" />
+
+    <ImageView
+        android:id="@+id/img_chatting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_toRightOf="@id/img_user"
+        android:maxWidth="150dip"
+        android:src="@drawable/stub_image" />
+
+</RelativeLayout>

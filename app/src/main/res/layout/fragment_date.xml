@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <include
+        layout="@layout/top_logo_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <RelativeLayout
+        android:id="@+id/layout_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/layout_date_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="111dp">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_circle"
+                android:layout_width="290dp"
+                android:layout_height="290dp"
+                android:layout_centerHorizontal="true" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_datelist"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_xl"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:alpha="0" />
+
+            <RelativeLayout
+                android:id="@+id/layout_imgs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="202dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout_my_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha="0">
+
+                    <ImageView
+                        android:id="@+id/img_my_pic"
+                        android:layout_width="@dimen/profile_m"
+                        android:layout_height="@dimen/profile_m"
+                        android:layout_marginRight="0dp"
+                        android:src="@drawable/icon_noprofile_m"
+                        android:transitionName="myImage" />
+
+                    <LinearLayout
+                        android:id="@+id/layout_my_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@id/img_my_pic"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="36dp"
+                        android:layout_toRightOf="@id/img_my_pic"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_my1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="나    "
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_my_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout_match_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/layout_my_box"
+                    android:alpha="0">
+
+                    <LinearLayout
+                        android:id="@+id/layout_match_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/title_match1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="친구"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_match1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/title_match1"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/img_match"
+                        android:layout_width="@dimen/profile_m"
+                        android:layout_height="@dimen/profile_m"
+                        android:layout_toRightOf="@id/layout_match_text"
+                        android:src="@drawable/btn_invite_fr"
+                        android:transitionName="ImageMatch" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_milestone_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout_date_box"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/date_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="2017년 7월 16일"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/txt_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/date_date"
+                android:layout_centerHorizontal="true"
+                android:text="주선자의 친구" />
+
+            <TextView
+                android:id="@+id/txt_blind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txt_match"
+                android:layout_centerHorizontal="true"
+                android:text="소개팅상대"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/btn_left_bk" />
+
+            <ImageView
+                android:id="@+id/btn_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/btn_right_bk" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_label">14sp</dimen>
+    <dimen name="custom_tab_layout_height">52dp</dimen>
+    <dimen name="margin_btn">10dp</dimen>
+
+    <dimen name="profile_xl">195dp</dimen>
+    <dimen name="profile_l">110dp</dimen>
+    <dimen name="profile_m">52dp</dimen>
+    <dimen name="profile_s">38dp</dimen>
+    <dimen name="profile_xs">22dp</dimen>
+</resources>

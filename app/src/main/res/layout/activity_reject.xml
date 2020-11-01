@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.pumkit.chin.chinchinso.MainActivity">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top_bar_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/border_circle_or1"
+        android:text="저장"/>
+
+    <TextView
+        android:id="@+id/title_fr_list1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/topbar"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_circle_gr1"
+        android:gravity="center"
+        android:hint="이 친구에게는 소개를 받지 않습니다."
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/title_fr_list2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_fr_list1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/border_circle_bk1"
+        android:gravity="center"
+        android:paddingBottom="13dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingTop="13dp"
+        android:text="+" />
+
+    <LinearLayout
+        android:id="@+id/layout_poke"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_fr_list2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:text="친구들 목록"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listView_fr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

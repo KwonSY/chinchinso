@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.pumkit.chin.chinchinso.OnePublicDate">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top_bar_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/layout_match"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/img_match"
+            android:layout_width="@dimen/profile_s"
+            android:layout_height="@dimen/profile_s"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_noprofile_m" />
+
+        <TextView
+            android:id="@+id/match_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/img_match"
+            android:text="홍길동 주선자의 소개 글" />
+
+        <TextView
+            android:id="@+id/match_recomm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/match_name"
+            android:layout_below="@id/match_name"
+            android:text="이 친구를 소개합니다." />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/layout_blind"
+        layout="@layout/activity_profile"
+        android:layout_width="match_parent"
+        android:layout_below="@id/topbar"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

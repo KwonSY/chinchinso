@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_one_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.pumkit.chin.chinchinso.InviteActivity">
+
+    <ImageView
+        android:id="@+id/btn_go_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/icon_arrow_up_bk"/>
+
+    <RelativeLayout
+        android:id="@+id/layout_txt_explain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+        <TextView
+            android:id="@+id/txt_explain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="친구를 초대해주세요." />
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_explain"
+            android:text="To : " />
+
+        <AutoCompleteTextView
+            android:id="@+id/auto_to_kakao"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/txt1"
+            android:layout_toRightOf="@id/txt1"
+            android:completionThreshold="1"
+            android:lines="1"
+            android:hint="연락처 친구이름을 검색하세요"
+            android:text=""
+            android:textSize="12sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/auto_to_kakao"
+            android:background="@drawable/border_circle_bk1"
+            android:padding="3dp"
+            android:text="연락처 검색"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/edit_kakao_contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:gravity="top|left"
+            android:hint="예) 친구야~ &#10; 내가 너한테 소개팅을 하사하겠다. &#10; 일단 '친친소'앱 가입해보렴!"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:maxLines="10"
+            android:minLines="5"
+            android:scrollbars="vertical"
+            android:background="@drawable/border_grey"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_invite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_circle_bk1"
+            android:layout_below="@id/edit_kakao_contents"
+            android:layout_marginTop="20dp"
+            android:onClick="shareKakao"
+            android:text="카톡초대" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_go_public"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="모두의소개팅" />
+
+</RelativeLayout>

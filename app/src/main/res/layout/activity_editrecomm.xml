@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:context="com.pumkit.chin.chinchinso.EditRecommActivity">
+
+    <include
+        android:id="@+id/topbar"
+        layout="@layout/top_bar_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_recomm"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:padding="10dp"
+        android:layout_below="@id/topbar"
+        android:hint="친구의 매력포인트는 어디 인가요?"/>
+
+    <Button
+        android:id="@+id/btn_save_edit_reomm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_recomm"
+        android:layout_margin="15dp"
+        android:background="@drawable/border_circle_or1"
+        android:text="저장"/>
+</RelativeLayout>

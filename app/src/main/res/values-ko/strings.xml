@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">친친소</string>
+
+    <string name="navigation_drawer_open">열었다</string>
+    <string name="navigation_drawer_close">닫혔다</string>
+
+    <string name="facebook_app_id">624960241173332</string>
+    <string name="fb_login_protocol_scheme">fb624960241173332</string>
+</resources>

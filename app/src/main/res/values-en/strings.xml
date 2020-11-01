@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">chinchinso</string>
+
+    <string name="navigation_drawer_open">open</string>
+    <string name="navigation_drawer_close">closse</string>
+
+    <string name="facebook_app_id">624960241173332</string>
+    <string name="fb_login_protocol_scheme">fb624960241173332</string>
+</resources>
